@@ -1,13 +1,13 @@
  def levelordertree(root):
-	 if(root==None):
-					return
-			que=[]
-			que.append(root)
+ 	if(root==None):
+		return
+	que=[]
+	que.append(root)
 
-			while(len(que)>0):
-					temp = que.pop(0)
-					print(temp.data, end=' ')
-					if (temp.left):
-							que.append(temp.left)
-					if (temp.right):
-							que.append(temp.right)
+	while(len(que)>0):
+		temp = que.pop(0)
+		print(temp.data, end=' ')
+		if (temp.left):
+			que.append(temp.left)
+		if (temp.right):
+			que.append(temp.right)
